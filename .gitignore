@@ -1,3 +1,4 @@
 # ignore all .env,.txt
 **/*.env
 **/*.txt
+*.txt
