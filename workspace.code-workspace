@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../STM8"
+		}
+	],
+	"settings": {}
+}
