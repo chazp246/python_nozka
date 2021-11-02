@@ -20,6 +20,15 @@ def veta(minslovo = 3, maxslovo = 12):
     veta = (veta[:-1] + ".").capitalize()
     return veta
 
-print(veta())
+def text(minvet = 3, maxvet = 10):
+    text = ""
+    for i in range(randint(minvet, maxvet)):
+        text = text + veta()
+        if randint(1, 3) == 2:
+            text = text + "\n"
+    return text
+
+
+f.write(text(30, 100))
 f.close()
 
