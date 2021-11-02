@@ -1,3 +1,3 @@
-# ignore all .env
+# ignore all .env,.txt
 **/*.env
 **/*.txt
