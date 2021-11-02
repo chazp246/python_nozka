@@ -23,4 +23,3 @@ def veta(minslovo = 3, maxslovo = 12):
 print(veta())
 f.close()
 
-#ahoj
