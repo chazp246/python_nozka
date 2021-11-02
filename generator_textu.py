@@ -24,7 +24,7 @@ def text(minvet = 3, maxvet = 10):
     text = ""
     for i in range(randint(minvet, maxvet)):
         text = text + veta()
-        if randint(1, 3) == 2:
+        if randint(1, 5) == 5:
             text = text + "\n"
     return text
 
