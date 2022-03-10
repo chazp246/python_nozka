@@ -2,7 +2,7 @@ import tkinter as tk
 from os.path import basename, splitext
 import os
 from tkinter import ANCHOR, Frame, Listbox, END, Radiobutton
-from turtle import color
+
 
 class Application(tk.Tk):
     name = basename(splitext(basename(__file__.capitalize()))[0])
