@@ -1,18 +1,23 @@
 from cProfile import label
 import numpy as np
 import matplotlib.pyplot as plt
+from math import pi
 
-t = np.linspace(0, 50e-3, 300000)
-#x1 = np.linspace(0, 10, 2000)
-u = 3.3 * np.sin(2*3.14*50*t)
-u2 = 5 * np.cos(2*3.14*50*t)
+jmeno = str(input("zadej název grafu: "))
+frekvence = int(input("zadej frekvenci: "))
+amplituda = float(input("zadej amplitudu: "))
+doba = int(input("pocet period: "))
+offsety = float(input("posun osa y: "))
+posun = float(input("fázový posun: "))
+
+t = np.linspace(0, doba*1/frekvence, frekvence*10000)
+u = amplituda * (np.sin(2*pi*frekvence*t + posun)) + offsety
 
 
-plt.plot(t, u, label = "U1")
-plt.plot(t, u2, label = "U2")
+plt.plot(t, u, label = jmeno)
+plt.xlabel
 plt.grid()
 plt.legend()
-#plt.ylim(-1.5, 1.5)
 
 
 plt.show()
